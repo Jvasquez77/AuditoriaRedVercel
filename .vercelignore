@@ -1,0 +1,36 @@
+# Archivos ignorados al subir a Vercel
+# (Vercel solo necesita el contenido de frontend/)
+
+# Docker
+docker-compose.yml
+Makefile
+**/Dockerfile
+
+# Backend Python (se despliega por separado en Railway/Render)
+backend/
+
+# Dependencias
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/venv/
+
+# Build artifacts
+**/.svelte-kit/
+**/build/
+**/.vercel/output/
+
+# Archivos de entorno locales
+**/.env
+!**/.env.example
+
+# Migaciones SQL (solo para Docker local)
+backend/migrations/
+
+# Media (almacenamiento externo en producción)
+backend/media/
+
+# Git
+.git/
+.gitignore
