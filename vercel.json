@@ -1,4 +1,3 @@
 {
-  "framework": "sveltekit",
-  "rootDirectory": "frontend"
+  "framework": "sveltekit"
 }
